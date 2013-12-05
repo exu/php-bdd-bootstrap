@@ -25,6 +25,11 @@ cd php-bdd-bootstrap
 composer install
 #+end_src
 
+This skeleton have integrated Symfony2 Command Component, Behat and PHPSpec.
+There is no framework neither microframework to manage routing and other
+things - you can chose whatever you like.
+
+
 Next - Do whatever you want with it, it's only skeleton - write stories,
 write specifications, create software
 
