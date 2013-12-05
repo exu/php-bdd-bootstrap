@@ -1,0 +1,15 @@
+* BDD Bootstrap
+
+If you need to Bootstrap your new BDD based project this repo is for You.
+It's really simple set of composer based config files and example commands
+to start specify your application with Behat and PHPSpec.
+
+
+** Usage
+
+#+begin_src sh
+git clone git@github.com:exu/php-bdd-bootstrap.git
+cd php-bdd-bootstrap
+#+end_src
+
+Do whatever you want with it, it's only skeleton

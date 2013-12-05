@@ -1,0 +1,26 @@
+default:
+    paths:
+        features: features
+    context:
+        class: Context\FeatureContext
+    filters:
+        tags: "~@deprecated&&~@pending"
+    extensions:
+        Behat\MinkExtension\Extension:
+            base_url: http://behat.local
+            goutte: ~
+            default_session:        goutte
+            javascript_session:     selenium2
+            selenium2:
+                browser: 'firefox'
+                capabilities:
+                    browser: ANY
+                    platform: ANY
+                    browserVersion: ANY
+                    browserName: ANY
+                    deviceType: ANY
+                    name: Behat Test
+                    browser: ANY
+                    deviceOrientation: ANY
+                    version: ANY
+                wd_host: 'http://localhost:4444/wd/hub'
