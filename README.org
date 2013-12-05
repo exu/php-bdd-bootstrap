@@ -4,8 +4,9 @@ If you need to Bootstrap your new BDD based project this repo is for You.
 It's really simple set of composer based config files and example commands
 to start specify your application with Behat and PHPSpec.
 
-
 ** Usage
+
+*** Installation
 
 This project is based on composer so you will need it. To
 install composer. I prefer installing composer globally so
@@ -25,13 +26,34 @@ cd php-bdd-bootstrap
 composer install
 #+end_src
 
+
+*** Project structure
+
 This skeleton have integrated Symfony2 Command Component, Behat and PHPSpec.
 There is no framework neither microframework to manage routing and other
 things - you can chose whatever you like.
 
 
-Next - Do whatever you want with it, it's only skeleton - write stories,
-write specifications, create software
+*** Preconfigured Behat
+
+Default behat session is set to =goutte= so it should be easy to test
+most of sites which not require javascript integration.
+
+You can pass =@javascript= tag to run selenium2 based tests.
+
+First run your selenium server:
+#+begin_src sh
+java -jar ~/path.to.selenium.jar.file.jar
+#+end_src
+
+Next run your behat suite:
+
+#+begin_src sh
+bin/behat
+#+end_src
 
 
-*** Enjoy!
+*** What next?
+
+Do whatever you want with it, it's only skeleton - write stories,
+write specifications, create software!
